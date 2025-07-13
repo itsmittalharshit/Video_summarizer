@@ -1,7 +1,9 @@
+!pip install moviepy opencv-python faster-whisper transformers torch torchvision torchaudio
+!pip install yt-dlp
 import os
 import numpy as np
 import streamlit as st
-from moviepy.editor import VideoFileClip
+from moviepy import VideoFileClip
 from faster_whisper import WhisperModel
 from transformers import pipeline, AutoModelForSeq2SeqLM, AutoTokenizer
 import tempfile
