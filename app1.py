@@ -1,7 +1,7 @@
 import os
 import numpy as np
 import streamlit as st
-from moviepy import VideoFileClip
+from moviepy.editor import VideoFileClip
 from faster_whisper import WhisperModel
 from transformers import pipeline, AutoModelForSeq2SeqLM, AutoTokenizer
 import tempfile
