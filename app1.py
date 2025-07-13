@@ -1,5 +1,3 @@
-pip install moviepy opencv-python faster-whisper transformers torch torchvision torchaudio
-pip install yt-dlp
 import os
 import numpy as np
 import streamlit as st
