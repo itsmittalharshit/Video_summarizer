@@ -10,8 +10,7 @@ import torch
 
 device = 0 if torch.cuda.is_available() else -1
 tokenizer = AutoTokenizer.from_pretrained("t5-small")
-model = AutoModelForSeq2SeqLM.from_pretrained("t5-small").to("cpu")
-t5_summarizer = pipeline("summarization", model=model, tokenizer=tokenizer, device=device)
+t5_summarizer = pipeline("summarization", model="t5-small", tokenizer="t5-small", device=device)
 
 def get_temp_path(filename):
     return os.path.join(tempfile.mkdtemp(), filename)
