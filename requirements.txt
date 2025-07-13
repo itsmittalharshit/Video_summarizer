@@ -1,0 +1,8 @@
+moviepy
+opencv-python
+faster-whisper
+transformers
+torch
+torchvision
+torchaudio
+yt-dlp
